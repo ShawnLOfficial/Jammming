@@ -49,7 +49,7 @@ export const Spoty = {
             return;
         }
         let aToken = Spoty.getAccessToken();
-        let headers = { Authorization: `Bearer ${accessToken}` };
+        let headers = { Authorization: `Bearer ${aToken}` };
         let UserId;
         return fetch('https://api.spotify.com/v1/me', {
             headers: headers
